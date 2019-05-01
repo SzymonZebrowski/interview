@@ -25,8 +25,9 @@ def zadanie2(data, n):
 def zadanie3(start, end, j):
     iter = Decimal(start)
     jump = Decimal(j)
+    last_element = Decimal(end)
     data = []
-    while iter <= Decimal(end):
+    while iter <= last_element:
         data.append(iter)
         iter += jump
     return data
